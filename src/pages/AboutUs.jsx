@@ -8,11 +8,7 @@ function AboutUs() {
           About us
         </p>
         <div className="flex mx-auto gap-x-4 w-fit ">
-          <img
-            src="src/assets/about-us-1.jpg"
-            alt=""
-            className="w-80 opacity-75"
-          />
+          <img src="img/about-us-1.jpg" alt="" className="w-80 opacity-75" />
           <div className="w-80 shadow-md shadow-black">
             <p className="text-center text-primary text-lg mt-8 mb-6 font-extralight ">
               Traditional and Modern Foods
@@ -27,11 +23,7 @@ function AboutUs() {
             </p>
             <p></p>
           </div>
-          <img
-            src="src/assets/about-us-2.jpg"
-            alt=""
-            className="w-80 opacity-75"
-          />
+          <img src="img/about-us-2.jpg" alt="" className="w-80 opacity-75" />
         </div>
       </div>
       <Footer />

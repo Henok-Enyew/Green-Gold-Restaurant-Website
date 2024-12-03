@@ -64,3 +64,7 @@ body {
 .form-contact input {
   @apply px-4 py-2 outline-primary-bold outline-1 focus:bg-white;
 }
+
+.leaflet-routing-geocoder-result {
+  display: none !important;
+}

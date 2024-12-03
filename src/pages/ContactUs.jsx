@@ -5,7 +5,7 @@ function ContactUs() {
   return (
     <div className="w-full">
       <div className="relative  h-96">
-        <div className="absolute inset-0 bg-[url('/src/assets/Bahirdar.jpg')] bg-cover bg-center bg-fixed"></div>
+        <div className="absolute inset-0 bg-[url('/img/Bahirdar.jpg')] bg-cover bg-center bg-fixed"></div>
         <div className="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center">
           <p className="text-center text-white text-4xl ">
             {" "}
@@ -38,7 +38,7 @@ function ContactUs() {
       <div className="bg-primary bg-opacity-35 text-gray-900 py-12">
         <p className="text-center text-gray-900 text-2xl py-11">Get in Touch</p>
         <div className="flex gap-x-12 w-1/2 mx-auto items-center">
-          <img src="src/assets/form.png" alt="" className="w-full" />
+          <img src="img/form.png" alt="" className="w-full" />
           <form
             action=""
             className="form-contact flex flex-col gap-y-3 justify-center w-full "

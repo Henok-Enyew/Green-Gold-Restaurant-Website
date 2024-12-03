@@ -6,7 +6,7 @@ function Homepage() {
   return (
     <div className="w-full">
       <div className="relative  h-screen">
-        <div className="absolute inset-0 bg-[url('/img//bg-desktop.jpg')] bg-cover bg-center bg-fixed"></div>
+        <div className="absolute inset-0 bg-[url('/img/bg-desktop.jpg')] bg-cover bg-center bg-fixed"></div>
         <div className="absolute inset-0 bg-black bg-opacity-60">
           <div className="py-36 z-30 text-center">
             <p className="font-thin text-lg text-white mb-4 ">
@@ -29,17 +29,17 @@ function Homepage() {
       </div>
       <div className="bg-custom-gradient h-auto py-12 px-36 pb-32 relative overflow-x-hidden">
         <img
-          src="src/assets/leaf.png"
+          src="img/leaf.png"
           alt="Decorative Leaf"
           className="absolute top-0 -right-20 w-60 -rotate-45 opacity-75 "
         />
         <img
-          src="src/assets/floating-juice.png"
+          src="img/floating-juice.png"
           alt="Decorative Leaf"
           className="absolute top-1/3 -left-20 w-60 "
         />
         <img
-          src="src/assets/floating-carrot.png"
+          src="img/floating-carrot.png"
           alt="Decorative Leaf"
           className="absolute bottom-0 -right-16 w-60 "
         />
@@ -50,34 +50,34 @@ function Homepage() {
         <div className="grid lg:grid-cols-3 gap-y-32">
           <CardSpecial
             name={"Special Firfir ስፔሻል ፍርፍር"}
-            imgSrc={"src/assets/special-firfir.png"}
+            imgSrc={"img/special-firfir.png"}
             price={100}
           />
           <CardSpecial
-            imgSrc={"src/assets/special-siga-firfir.png"}
+            imgSrc={"img/special-siga-firfir.png"}
             name={"Special Firfir ስፔሻል ፍርፍር"}
             price={100}
           />
           <CardSpecial
-            imgSrc={"src/assets/special-siga-firfir.png"}
+            imgSrc={"img/special-siga-firfir.png"}
             name={"Fruit Panch ፍሩት ፓንች"}
             price={100}
             // imgStyle="!w-32 "
           />
 
           <CardSpecial
-            imgSrc={"src/assets/special-siga-firfir.png"}
+            imgSrc={"img/special-siga-firfir.png"}
             name={"Special Siga Firfir ስፔሻል ስጋ ፍርፍር"}
             price={250}
           />
           <CardSpecial
-            imgSrc={"src/assets/special-siga-firfir.png"}
+            imgSrc={"img/special-siga-firfir.png"}
             name={"Special Siga Firfir ስፔሻል ስጋ ፍርፍር"}
             price={250}
           />
 
           <CardSpecial
-            imgSrc={"src/assets/avocado-juice.png"}
+            imgSrc={"img/avocado-juice.png"}
             name={"Avocado Juice አቮካዶ ጁስ"}
             price={100}
           />
@@ -85,12 +85,12 @@ function Homepage() {
       </div>
       <div className="relative  h-screen ">
         <img
-          src="/src/assets/floating-coffee.png"
+          src="img/floating-coffee.png"
           alt="floating coffee"
           className="absolute -bottom-16 left-0 z-50 w-48"
         />
         <img
-          src="/src/assets/floating-coffee-1.png"
+          src="img/floating-coffee-1.png"
           alt="floating coffee"
           className="absolute -bottom-8  -right-8 z-50 w-48"
         />
@@ -101,7 +101,7 @@ function Homepage() {
           </p>
           <div className="w-2/3 border-[1px] border-primary flex mx-auto bg-bg-primary bg-opacity-35">
             <img
-              src="/src/assets/Coffee-girl.jpg"
+              src="img/Coffee-girl.jpg"
               alt="Coffee Girl"
               className="w-[45%]"
             />
