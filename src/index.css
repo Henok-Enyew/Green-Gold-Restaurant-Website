@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 
+COLOR COLLECTION
+#1F4529 
+#FCF596
+#FABC3F
+#FFC94A
+#FFAF45
+#FB8B24
+#D6D46D 
+*/
+
+body {
+  font-family: "Poppins", sans-serif;
+  cursor: url("/cursor.png"), auto;
+  overflow-x: hidden;
+}
+
+/* TailwindCSS Version */
+@layer components {
+  .nav-link {
+    @apply no-underline tracking-[0.15em] inline-block py-[2px] px-[4px] relative transition-all duration-300 outline-none;
+  }
+
+  .nav-link:hover {
+    @apply text-white shadow-none;
+  }
+  .nav-link::after {
+    @apply absolute bottom-0 left-1/2 block h-[1px] bg-primary transition-all duration-300 ease-in-out w-0;
+    content: "";
+  }
+  .nav-link:hover::after {
+    @apply w-full left-0  bg-primary-bold;
+  }
+}
+
+/* Optional: For screen size adjustments */
+@media screen and (max-height: 300px) {
+  ul {
+    @apply mt-[40px];
+  }
+}
+
+.tabs {
+  @apply bg-white bg-opacity-10 rounded-full px-6 py-2 text-white transition-all duration-300 z-20;
+}
+
+.nav-link.active {
+  @apply text-white shadow-[inset_0_-1px_0_0_#FABC3F];
+}
+
+.tabs .active {
+  @apply text-primary-bold;
+}
+
+.tabs:hover {
+  @apply text-primary-bold bg-opacity-20;
+}
+
+.form-contact input {
+  @apply px-4 py-2 outline-primary-bold outline-1 focus:bg-white;
+}
