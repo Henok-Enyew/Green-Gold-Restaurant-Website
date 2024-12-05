@@ -12,12 +12,22 @@ function AboutUs() {
             src="img/about-us-1.jpg"
             alt=""
             className="w-80 sm:w-[420px] opacity-75 lg:w-80"
+            data-aos="fade-left"
+            data-aos-duration="1200"
           />
           <div className="w-80 shadow-md shadow-black sm:w-[420px] lg:w-80">
-            <p className="text-center text-primary text-lg mt-8 mb-6 font-extralight sm:text-2xl lg:text-xl ">
+            <p
+              data-aos="fade-up"
+              data-aos-duration="1200"
+              className="text-center text-primary text-lg mt-8 mb-6 font-extralight sm:text-2xl lg:text-xl "
+            >
               Traditional and Modern Foods
             </p>
-            <p className="text-center px-3 py-5 text-gray-200 font-extralight sm:text-xl sm:leading-10 lg:leading-7 lg:text-base">
+            <p
+              data-aos="fade-up"
+              data-aos-duration="1400"
+              className="text-center px-3 py-5 lg:py-0 text-gray-200 font-extralight sm:text-xl sm:leading-10 lg:leading-7 lg:text-base"
+            >
               We are dedicated to serving delicious, high-quality meals crafted
               with the freshest ingredients. Whether you&apos;re here for a
               quick bite, a cozy coffee, or a memorable dining experience, our
@@ -27,8 +37,10 @@ function AboutUs() {
             </p>
           </div>
           <img
+            data-aos="fade-right"
+            data-aos-duration="1200"
             src="img/about-us-2.jpg"
-            alt=""
+            alt="Ethiopian food- Green Gold restaurant"
             className="w-80 opacity-75 sm:w-[420px] lg:w-80"
           />
         </div>

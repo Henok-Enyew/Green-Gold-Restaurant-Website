@@ -7,10 +7,18 @@ function ContactUs() {
       <div className="relative  h-96">
         <div className="absolute inset-0 bg-[url('/img/Bahirdar.jpg')] bg-cover bg-center bg-fixed"></div>
         <div className="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center">
-          <p className="text-center text-white text-2xl px-2 lg:text-4xl  ">
+          <p
+            className="text-center text-white text-2xl px-2 lg:text-4xl  "
+            data-aos="fade-up"
+            data-aos-duration="1200"
+          >
             Come find us Bahirdar - Diaspora,Abay Mado,Bahirdar,Ethiopia
           </p>
-          <div className="text-gray-200 mt-3">
+          <div
+            className="text-gray-200 mt-3"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
             <div className="flex  items-center gap-3 mt-3">
               <svg
                 className="fill-primary w-6 h-6"
@@ -35,12 +43,23 @@ function ContactUs() {
         </div>
       </div>
       <div className="bg-primary bg-opacity-35 text-gray-900 py-8  lg:py-12 ">
-        <p className="text-center text-gray-900 text-2xl py-7 lg:py-11">
+        <p
+          data-aos="fade-up"
+          className="text-center text-gray-900 text-2xl py-7 lg:py-11"
+        >
           Get in Touch
         </p>
         <div className="flex flex-col gap-y-10 lg:flex-row gap-x-12 w-3/4 lg:w-1/2 mx-auto items-center">
-          <img src="img/form.png" alt="" className=" w-full " />
+          <img
+            src="img/form.png"
+            alt=""
+            className=" w-full "
+            data-aos="fade-right"
+            data-aos-duration="1500"
+          />
           <form
+            data-aos="fade-left"
+            data-aos-duration="1500"
             action=""
             className="form-contact flex flex-col gap-y-3 justify-center w-full "
           >

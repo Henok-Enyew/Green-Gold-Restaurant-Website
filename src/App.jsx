@@ -7,8 +7,17 @@ import PageNotFound from "./pages/PageNotFound";
 import NavBar from "./pages/NavBar";
 import AboutUs from "./pages/AboutUs";
 import ContactUs from "./pages/ContactUs";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: false });
+    window.addEventListener("scroll", AOS.refresh);
+    return () => window.removeEventListener("scroll", AOS.refresh);
+  }, []);
+
   return (
     <div className="relative">
       <BrowserRouter>

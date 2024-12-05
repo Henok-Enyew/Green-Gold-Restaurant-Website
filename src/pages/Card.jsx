@@ -4,6 +4,7 @@ function Card({ name, price }) {
   return (
     <NavLink
       to={"/menu"}
+      data-aos="fade-up"
       className=" border-[1px] border-primary duration-500 transition-all bg-primary hover:scale-105 bg-opacity-10 w-64 lg:w-56  border-opacity-30 rounded-2xl flex-col justify-between pb-4 overflow-hidden z-30"
     >
       <img src="img/shiro-feses.jpg" alt="" className="w-full h-36 " />
