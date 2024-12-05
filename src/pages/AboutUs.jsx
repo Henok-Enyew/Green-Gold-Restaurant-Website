@@ -3,7 +3,7 @@ import Footer from "../components/Footer";
 function AboutUs() {
   return (
     <div>
-      <div className="min-h-screen bg-bg-primary pt-24 w-full">
+      <div className="min-h-screen bg-bg-primary pt-24 w-full overflow-hidden">
         <p className="text-3xl text-white text-center font-extralight pb-10">
           About us
         </p>
