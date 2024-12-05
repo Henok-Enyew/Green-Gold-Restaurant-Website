@@ -10,6 +10,7 @@ import ContactUs from "./pages/ContactUs";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import ScrollToTop from "./components/scrollToTop";
 
 function App() {
   useEffect(() => {
@@ -21,6 +22,7 @@ function App() {
   return (
     <div className="relative">
       <BrowserRouter>
+        <ScrollToTop />
         <NavBar />
         <Routes>
           <Route path="/" element={<Homepage />} />

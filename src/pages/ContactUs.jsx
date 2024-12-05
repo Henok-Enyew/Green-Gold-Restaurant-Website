@@ -3,7 +3,7 @@ import RestaurantMap from "../components/RestaurantMap";
 
 function ContactUs() {
   return (
-    <div className="w-full">
+    <div className="w-full overflow-hidden">
       <div className="relative  h-96">
         <div className="absolute inset-0 bg-[url('/img/Bahirdar.jpg')] bg-cover bg-center bg-fixed"></div>
         <div className="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center">
