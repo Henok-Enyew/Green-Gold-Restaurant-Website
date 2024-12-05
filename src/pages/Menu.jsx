@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 
 function Menu() {
   return (
-    <div className="bg-bg-primary min-h-screen relative  ">
+    <div className="bg-bg-primary min-h-screen relative overflow-hidden  ">
       <img
         src="img/menu-bg.png"
         alt=""
