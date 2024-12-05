@@ -4,7 +4,7 @@ function CardSpecial({ name, imgSrc, price, imgStyle = "" }) {
   return (
     <NavLink
       to="/menu"
-      className=" border-[1px] border-primary duration-500 transition-all bg-primary hover:scale-105 bg-opacity-10 w-64 border-opacity-30  px-5 rounded-2xl flex-col justify-between pb-4"
+      className=" border-[1px] mx-auto  border-primary duration-500 transition-all bg-primary hover:scale-105 bg-opacity-10 w-64  border-opacity-30  px-5 rounded-2xl flex-col justify-between pb-4 z-30"
     >
       <img
         src={`${imgSrc}`}

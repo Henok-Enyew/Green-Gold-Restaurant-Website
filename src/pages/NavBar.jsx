@@ -1,34 +1,80 @@
 import { NavLink } from "react-router-dom";
-import { GiShoppingCart } from "react-icons/gi";
+import { GiForkKnifeSpoon, GiKnifeFork, GiShoppingCart } from "react-icons/gi";
+import { useState } from "react";
 // import HoverUnderline from "../components/HoverUnderline";
 function NavBar() {
+  const [showNav, setShowNav] = useState(false);
   return (
-    <nav className="fixed top-0 left-0 w-full z-50  flex items-center justify-between p-4 bg-transparent text-primary  transition-all duration-200 font-extralight text-lg ">
-      <p>Green Gold</p>
-      <div className="flex space-x-8 bg-white bg-opacity-15 py-[1px] px-3 backdrop-blur-md">
-        <NavLink to="/" className="nav-link ">
+    <nav className="fixed top-0 left-0 w-full  flex items-center justify-between py-2 px-1 lg:p-4  bg-transparent text-primary  transition-all duration-200 font-extralight text-lg z-40  ">
+      <p className="z-50">Green Gold</p>
+      <div
+        //   className={`absolute top-0 left-0 flex flex-col h-96 items-center justify-center gap-y-5 lg:flex-row lg:   lg:space-x-8 bg-white bg-opacity-15 py-[1px] px-3 backdrop-blur-md transition-all duration-300 ${
+        //     showNav ? "translate-x-0" : "-translate-x-full"
+        //   }`}
+        // >
+        className={`absolute top-0 left-0 flex flex-col h-96 items-center justify-center gap-y-5 
+        bg-black bg-opacity-15 py-[1px] px-3 backdrop-blur-md transition-all duration-300 
+        ${showNav ? "translate-x-0" : "-translate-x-full"}
+        lg:flex-row lg:gap-y-0 lg:h-auto lg:static lg:translate-x-0 lg:justify-center lg:space-x-8`}
+      >
+        <NavLink
+          onClick={() => {
+            setShowNav(false);
+          }}
+          to="/"
+          className="nav-link "
+        >
           Home
         </NavLink>
-        <NavLink to="/menu" className="nav-link">
+        <NavLink
+          onClick={() => {
+            setShowNav(false);
+          }}
+          to="/menu"
+          className="nav-link"
+        >
           Menu
         </NavLink>
-        <NavLink to="/about-us" className="nav-link">
+        <NavLink
+          onClick={() => {
+            setShowNav(false);
+          }}
+          to="/about-us"
+          className="nav-link"
+        >
           About us
         </NavLink>
-        <NavLink to="/contact-us" className="nav-link">
+        <NavLink
+          onClick={() => {
+            setShowNav(false);
+          }}
+          to="/contact-us"
+          className="nav-link"
+        >
           Contact us
         </NavLink>
       </div>
-      <div className="flex space-x-4 py-[1px] px-4 backdrop-blur-md">
-        <button className="flex items-center justify-center">
-          <GiShoppingCart className="text-2xl" />
+      <div className="flex lg:space-x-4 space-x-2 py-[1px] px-2 lg:px-4 backdrop-blur-md z-50">
+        <button className="flex items-center justify-center outline-none border-none transition-all duration-300 ">
+          <GiShoppingCart className="text-2xl size-8 sm:size-10 lg:size-8 hover:fill-primary-bold" />
         </button>
-        <button className="bg-primary text-gray-700 px-4  transition-all duration-300 hover:bg-primary-bold">
+        <button className="bg-primary text-gray-700 px-2 lg:px-4  transition-all duration-300 hover:bg-primary-bold ">
           Sign up
+        </button>
+        <button
+          className=" lg:hidden transition-all duration-300 border-none outline-none"
+          onClick={() => setShowNav((s) => !s)}
+        >
+          {showNav ? (
+            <GiKnifeFork className="fill-primary hover:fill-primary-bold text-lg size-7 sm:size-11" />
+          ) : (
+            <GiForkKnifeSpoon className="fill-primary hover:fill-primary-bold rotate-90 size-7 sm:size-11" />
+          )}
         </button>
       </div>
     </nav>
   );
 }
+153146896;
 
 export default NavBar;

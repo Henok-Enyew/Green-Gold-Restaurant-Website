@@ -47,14 +47,14 @@ const RestaurantMap = () => {
       className="h-96 w-full"
       //   style={{ height: "500px", width: "100%" }}
     >
-      {/* <TileLayer
+      <TileLayer
         url="https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png"
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-      /> */}
-      <TileLayer
+      />
+      {/* <TileLayer
         url="https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"
         attribution='&copy; <a href="https://www.esri.com/">ESRI</a> contributors'
-      />
+      /> */}
       <Marker position={restaurantPosition} interactive={true}>
         <Popup>
           <span> Green Gold Restaurant</span>

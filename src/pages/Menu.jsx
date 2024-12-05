@@ -4,11 +4,11 @@ import Footer from "../components/Footer";
 
 function Menu() {
   return (
-    <div className="bg-bg-primary min-h-screen relative w-full">
+    <div className="bg-bg-primary min-h-screen relative  ">
       <img
         src="img/menu-bg.png"
         alt=""
-        className="w-[1000px] absolute -right-[440px]  blur-sm z-0"
+        className="w-[1000px] absolute top-64 -right-48 lg:-right-[440px]  blur-sm z-0"
       />
       <img
         src="img/menu-bg-2.png"
@@ -20,7 +20,7 @@ function Menu() {
         alt=""
         className="w-48 absolute -right-16 bottom-1/4  blur-[1px] z-0"
       />
-      <div className="pt-20 mx-auto ml-36 flex gap-4">
+      <div className="pt-20 lg:mx-auto ml-2 lg:ml-36 text-sm flex items-center justify-start gap-x-3 overflow-x-scroll lg:overflow-hidden whitespace-nowrap">
         <NavLink to={"/menu"} className="tabs ">
           All
         </NavLink>
@@ -43,7 +43,7 @@ function Menu() {
           Alcohol Drinks
         </NavLink>
       </div>
-      <div className="grid grid-cols-4 mx-auto mt-12 gap-x-0 gap-y-6 z-50 w-3/4  px-4 py-2 mb-16">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-4 grid-cols-1 mx-auto mt-12 gap-x-0 gap-y-6 z-50 w-3/4  px-4 py-2 mb-16">
         <Card name={"Shiro Feses - ሽሮ ፈሰስ"} price={100} />
         <Card name={"Shiro Feses - ሽሮ ፈሰስ"} price={100} />
         <Card name={"Shiro Feses - ሽሮ ፈሰስ"} price={100} />

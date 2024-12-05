@@ -1,17 +1,17 @@
 function Footer() {
   return (
-    <footer className="flex gap-x-16 w-full h-60 bg-bg-primary py-10 px-44 text-gray-300">
+    <footer className="grid grid-cols-2 gap-y-8 sm:flex lg:flex pt-20 sm:gap-x-8 lg:gap-x-16 gap-x-0  w-full lg:h-60 bg-bg-primary lg:py-10 py-14 lg:px-44 px-3 text-gray-300">
       <div>
-        <p className="text-primary-bold text-lg mb-6">GREEN GOLD</p>
+        <p className="text-primary-bold lg:text-lg mb-6 text-sm">GREEN GOLD</p>
         <div className="flex-col">
-          <label htmlFor="subcscribe" className="block font-extralight">
+          <label htmlFor="subcscribe" className="block font-extralight text-sm">
             Subscribe Now
           </label>
           <input
             type="email"
             name="subscribe"
             id=""
-            className="block bg-transparent font-extralight border-b-[1px] border-primary text-gray-200 outline-none px-1 py-1 text-sm"
+            className="block bg-transparent font-extralight border-b-[1px] border-primary text-gray-200 outline-none px-1 py-1 text-sm w-36"
           />
           <button className="bg-primary px-4 py-1 mt-3 text-gray-900 transition-all hover:bg-primary-bold">
             Subscribe
@@ -32,17 +32,17 @@ function Footer() {
         <p className="text-sm font-extralight">Modern Foods</p>
         <p className="text-sm font-extralight">Drinks</p>
       </div>
-      <div>
-        <p className="text-primary-bold text-md mb-3 ">Contact Us</p>
+      <div className="-ml-6">
+        <p className="text-primary-bold lg:text-md mb-3 text-sm ">Contact Us</p>
         <div className="flex items-center gap-3 mt-3">
           <svg
-            className="fill-primary w-6 h-6"
+            className="fill-primary h-6 w-6"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 256 256"
           >
             <path d="M221.59,160.3l-47.24-21.17a14,14,0,0,0-13.28,1.22,4.81,4.81,0,0,0-.56.42l-24.69,21a1.88,1.88,0,0,1-1.68.06c-15.87-7.66-32.31-24-40-39.65a1.91,1.91,0,0,1,0-1.68l21.07-25a6.13,6.13,0,0,0,.42-.58,14,14,0,0,0,1.12-13.27L95.73,34.49a14,14,0,0,0-14.56-8.38A54.24,54.24,0,0,0,34,80c0,78.3,63.7,142,142,142a54.25,54.25,0,0,0,53.89-47.17A14,14,0,0,0,221.59,160.3ZM176,210C104.32,210,46,151.68,46,80A42.23,42.23,0,0,1,82.67,38h.23a2,2,0,0,1,1.84,1.31l21.1,47.11a2,2,0,0,1,0,1.67L84.73,113.15a4.73,4.73,0,0,0-.43.57,14,14,0,0,0-.91,13.73c8.87,18.16,27.17,36.32,45.53,45.19a14,14,0,0,0,13.77-1c.19-.13.38-.27.56-.42l24.68-21a1.92,1.92,0,0,1,1.6-.1l47.25,21.17a2,2,0,0,1,1.21,2A42.24,42.24,0,0,1,176,210Z"></path>
           </svg>
-          <p>+251-904-927-815</p>
+          <p className="text-md font-extralight">+251904927815</p>
         </div>
         <div className="flex items-center gap-3 mt-1">
           <svg
@@ -52,7 +52,7 @@ function Footer() {
           >
             <path d="M224,50H32a6,6,0,0,0-6,6V192a14,14,0,0,0,14,14H216a14,14,0,0,0,14-14V56A6,6,0,0,0,224,50Zm-96,85.86L47.42,62H208.58ZM101.67,128,38,186.36V69.64Zm8.88,8.14L124,148.42a6,6,0,0,0,8.1,0l13.4-12.28L208.58,194H47.43ZM154.33,128,218,69.64V186.36Z"></path>
           </svg>
-          <p>henokenyew86@gmail.com</p>
+          <p className="text-sm font-extralight">henokenyew86@gmail.com</p>
         </div>
         <div className="flex mt-3 items-center justify-center gap-3">
           <a href="https://github.com/Henok-Enyew" target="_blank">
