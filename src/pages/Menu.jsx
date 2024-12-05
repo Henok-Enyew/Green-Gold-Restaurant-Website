@@ -21,7 +21,7 @@ function Menu() {
         src="img/floating-tomato.png"
         alt=""
         data-aos="fade-left"
-        className="w-48 absolute -right-16 bottom-60  blur-[1px] z-0"
+        className="w-48 absolute -right-16 bottom-1/4  blur-[1px] z-0"
       />
       <div className="pt-20 lg:mx-auto ml-2 lg:ml-36 text-sm flex items-center justify-start gap-x-3 overflow-x-scroll lg:overflow-hidden whitespace-nowrap">
         <NavLink to={"/menu"} className="tabs ">
