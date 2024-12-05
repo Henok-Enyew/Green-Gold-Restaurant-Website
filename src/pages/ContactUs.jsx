@@ -8,7 +8,7 @@ function ContactUs() {
         <div className="absolute inset-0 bg-[url('/img/Bahirdar.jpg')] bg-cover bg-center bg-fixed"></div>
         <div className="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center">
           <p className="text-center text-white text-2xl px-2 lg:text-4xl  ">
-            Come find us Bahirdar - Abay Mado - Diaspora
+            Come find us Bahirdar - Diaspora,Abay Mado,Bahirdar,Ethiopia
           </p>
           <div className="text-gray-200 mt-3">
             <div className="flex  items-center gap-3 mt-3">
