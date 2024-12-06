@@ -6,7 +6,13 @@ function NavBar() {
   const [showNav, setShowNav] = useState(false);
   return (
     <nav className="fixed top-0 left-0 w-full  flex items-center justify-between py-2 px-1 lg:p-4  bg-transparent text-primary  transition-all duration-200 font-extralight text-lg z-40  ">
-      <p className="z-50">Green Gold</p>
+      <NavLink to={"/"} className="z-50">
+        <img
+          src="/logo.png"
+          alt="Logo of Green Gold Restaurant"
+          className="w-28 lg:w-32"
+        />
+      </NavLink>
       <div
         //   className={`absolute top-0 left-0 flex flex-col h-96 items-center justify-center gap-y-5 lg:flex-row lg:   lg:space-x-8 bg-white bg-opacity-15 py-[1px] px-3 backdrop-blur-md transition-all duration-300 ${
         //     showNav ? "translate-x-0" : "-translate-x-full"
