@@ -20,7 +20,7 @@ const RestaurantMap = () => {
   const restaurantPosition = [11.612071586784412, 37.427283143631335]; // Restaurant location (latitude, longitude)
 
   // Detect screen size for mobile
-  const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
+  const isMobile = useMediaQuery({ query: "(max-width: 868px)" });
 
   const Routing = () => {
     const map = useMap();
