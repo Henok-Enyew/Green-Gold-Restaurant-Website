@@ -10,7 +10,7 @@ import ContactUs from "./pages/ContactUs";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-import ScrollToTop from "./components/scrollToTop";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   useEffect(() => {
