@@ -46,7 +46,7 @@ function Menu() {
           Alcohol Drinks
         </NavLink>
       </div>
-      <div className="grid sm:grid-cols-2 lg:grid-cols-4 grid-cols-1 mx-auto mt-12 gap-x-0 gap-y-6 z-50 w-3/4  px-4 py-2 mb-16">
+      <div className=" grid sm:grid-cols-2 lg:grid-cols-4 grid-cols-1 mx-auto mt-12 gap-x-0 gap-y-6 z-50 w-3/4  px-4 py-2 mb-16">
         <Card name={"Shiro Feses - ሽሮ ፈሰስ"} price={100} />
         <Card name={"Shiro Feses - ሽሮ ፈሰስ"} price={100} />
         <Card name={"Shiro Feses - ሽሮ ፈሰስ"} price={100} />

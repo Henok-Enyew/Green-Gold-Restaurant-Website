@@ -1,11 +1,13 @@
 import { NavLink } from "react-router-dom";
 import { GiForkKnifeSpoon, GiKnifeFork, GiShoppingCart } from "react-icons/gi";
 import { useState } from "react";
+import { useCart } from "../contexts/CartProvider";
 // import HoverUnderline from "../components/HoverUnderline";
 function NavBar() {
+  const { setCartOpen } = useCart();
   const [showNav, setShowNav] = useState(false);
   return (
-    <nav className="fixed top-0 left-0 w-full  flex items-center justify-between py-2 px-1 lg:p-4  bg-transparent text-primary  transition-all duration-200 font-extralight text-lg z-40  ">
+    <nav className="fixed top-0 left-0 w-full  flex items-center justify-between py-2 px-1 lg:p-4  bg-transparent text-primary  transition-all duration-200 font-extralight text-lg z-[47]  ">
       <NavLink to={"/"} className="z-50">
         <img
           src="/logo.png"
@@ -61,7 +63,10 @@ function NavBar() {
         </NavLink>
       </div>
       <div className="flex lg:space-x-4 space-x-2 py-[1px] px-2 lg:px-4 backdrop-blur-md z-50">
-        <button className="flex items-center justify-center outline-none border-none transition-all duration-300 ">
+        <button
+          className="flex items-center justify-center outline-none border-none transition-all duration-300 "
+          onClick={() => setCartOpen(true)}
+        >
           <GiShoppingCart className="text-2xl size-8 sm:size-10 lg:size-8 hover:fill-primary-bold" />
         </button>
         <button className="bg-primary text-gray-700 px-2 lg:px-4  transition-all duration-300 hover:bg-primary-bold ">

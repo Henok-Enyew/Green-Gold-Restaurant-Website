@@ -16,6 +16,8 @@ export default {
       backgroundImage: {
         "custom-gradient":
           "linear-gradient(165deg, rgba(43,40,0,1) 0%, rgba(9,21,12,1) 100%)",
+        "custom-gradient-2":
+          "linear-gradient(165deg, rgba(9,21,12,0.7) 24%, rgba(252,245,150,0.6) 48%, rgba(75,153,96,0.8) 71%);",
       },
     },
   },

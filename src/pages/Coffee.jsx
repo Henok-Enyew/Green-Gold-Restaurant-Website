@@ -5,13 +5,13 @@ function Coffee() {
         src="img/floating-coffee.png"
         alt="floating coffee"
         data-aos="fade-right"
-        className="absolute -bottom-16 lg:left-0 -left-3 z-50 lg:w-48 w-24"
+        className="absolute -bottom-16 lg:left-0 -left-3 z-40 lg:w-48 w-24"
       />
       <img
         src="img/floating-coffee-1.png"
         alt="floating coffee"
         data-aos="fade-left"
-        className="absolute lg:-bottom-8  -bottom-10 -right-4 z-50 lg:w-48 w-24"
+        className="absolute lg:-bottom-8  -bottom-10 -right-4 z-40 lg:w-48 w-24"
       />
       <div className="absolute inset-0 bg-[url('/img/Coffe-Background.jpg')] bg-cover bg-center bg-fixed"></div>
       <div className="absolute inset-0 bg-black bg-opacity-70 py-12 ">

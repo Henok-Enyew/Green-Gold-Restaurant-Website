@@ -11,6 +11,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import ScrollToTop from "./components/ScrollToTop";
+import Cart from "./pages/Cart";
+import { CartProvider } from "./contexts/CartProvider";
 
 function App() {
   useEffect(() => {
@@ -22,17 +24,21 @@ function App() {
   return (
     <div className="relative">
       <BrowserRouter>
-        <ScrollToTop />
-        <NavBar />
-        <Routes>
-          <Route path="/" element={<Homepage />} />
-          <Route path="menu" element={<Menu />} />
-          <Route path="meal" element={<Meal />} />
-          <Route path="profile" element={<UserProfile />} />
-          <Route path="about-us" element={<AboutUs />} />
-          <Route path="contact-us" element={<ContactUs />} />
-          <Route path="*" element={<PageNotFound />} />
-        </Routes>
+        <CartProvider>
+          <ScrollToTop />
+          <NavBar />
+          <Cart />
+          <Routes>
+            <Route path="/" element={<Homepage />} />
+            <Route path="menu" element={<Menu />} />
+            <Route path="meal" element={<Meal />} />
+            <Route path="profile" element={<UserProfile />} />
+            <Route path="about-us" element={<AboutUs />} />
+            <Route path="contact-us" element={<ContactUs />} />
+            {/* <Route path="cart" element={<Cart />} /> */}
+            <Route path="*" element={<PageNotFound />} />
+          </Routes>
+        </CartProvider>
       </BrowserRouter>
     </div>
   );
