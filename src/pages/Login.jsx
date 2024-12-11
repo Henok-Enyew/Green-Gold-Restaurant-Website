@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 
 function Login() {
   return (
-    <div className="min-h-screen lg:h-screen w-full bg-bg-primary flex  items-center justify-center ">
+    <div className="min-h-screen lg:h-screen w-full bg-bg-primary flex  items-center justify-center overflow-hidden">
       <div className="w-full flex flex-col lg:flex-row lg:w-1/2 mx-auto shadow-2xl">
         <img
           src="img/login.jpg"

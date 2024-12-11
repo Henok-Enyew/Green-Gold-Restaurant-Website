@@ -4,8 +4,8 @@ import { NavLink } from "react-router-dom";
 
 function Signup() {
   return (
-    <div className="min-h-screen lg:h-screen  w-full bg-bg-primary flex  items-center justify-center ">
-      <div className="mt-2 w-full flex flex-col lg:w-1/2 lg:flex-row-reverse mx-auto shadow-2xl">
+    <div className="min-h-screen lg:h-screen  w-full bg-bg-primary flex  items-center justify-center overflow-hidden">
+      <div className=" w-full flex flex-col lg:w-1/2 lg:flex-row-reverse mx-auto shadow-2xl">
         <img
           src="img/signup.jpg"
           alt="Login form image Green Gold Restaurant"
