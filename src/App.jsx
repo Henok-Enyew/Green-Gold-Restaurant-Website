@@ -13,6 +13,8 @@ import { useEffect } from "react";
 import ScrollToTop from "./components/ScrollToTop";
 import Cart from "./pages/Cart";
 import { CartProvider } from "./contexts/CartProvider";
+import Login from "./pages/Login";
+import Signup from "./pages/Signup";
 
 function App() {
   useEffect(() => {
@@ -35,7 +37,8 @@ function App() {
             <Route path="profile" element={<UserProfile />} />
             <Route path="about-us" element={<AboutUs />} />
             <Route path="contact-us" element={<ContactUs />} />
-            {/* <Route path="cart" element={<Cart />} /> */}
+            <Route path="login" element={<Login />} />
+            <Route path="signup" element={<Signup />} />
             <Route path="*" element={<PageNotFound />} />
           </Routes>
         </CartProvider>

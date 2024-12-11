@@ -2,7 +2,7 @@ import CardSpecial from "./CardSpecial";
 
 function OurSpecials() {
   return (
-    <div className="bg-custom-gradient w-full h-auto py-12 lg:px-36   pb-32 relative overflow-x-hidden">
+    <div className=" bg-bg-primary w-full h-auto py-12 lg:px-36   pb-32 relative overflow-x-hidden">
       <img
         src="img/leaf.png"
         alt="Decorative Leaf"

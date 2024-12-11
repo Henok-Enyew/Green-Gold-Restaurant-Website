@@ -11,11 +11,11 @@ function AboutUs() {
           <img
             src="img/about-us-1.jpg"
             alt=""
-            className="w-80 sm:w-[420px] opacity-75 lg:w-80"
+            className="w-80 sm:w-[520px] opacity-75 lg:w-80"
             data-aos="fade-left"
             data-aos-duration="1200"
           />
-          <div className="w-80 shadow-md shadow-black sm:w-[420px] lg:w-80">
+          <div className="w-80 shadow-md shadow-black sm:w-[520px] lg:w-80">
             <p
               data-aos="fade-up"
               data-aos-duration="1200"
@@ -41,7 +41,7 @@ function AboutUs() {
             data-aos-duration="1200"
             src="img/about-us-2.jpg"
             alt="Ethiopian food- Green Gold restaurant"
-            className="w-80 opacity-75 sm:w-[420px] lg:w-80"
+            className="w-80 opacity-75 sm:w-[520px] lg:w-80"
           />
         </div>
       </div>

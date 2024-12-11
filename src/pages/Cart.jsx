@@ -1,4 +1,3 @@
-import { RiDeleteBinLine } from "react-icons/ri";
 import { useCart } from "../contexts/CartProvider";
 import CartItem from "./CartItem";
 

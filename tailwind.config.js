@@ -5,7 +5,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        "bg-primary": "#09150c",
+        "bg-primary": "#1f2a14",
+        // "bg-primary": "#09150c",
         // "bg-primary": "#1F4529",
         primary: "#FCF596",
         "primary-bold": "#FABC3F",

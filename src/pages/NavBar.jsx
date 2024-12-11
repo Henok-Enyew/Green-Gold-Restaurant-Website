@@ -69,9 +69,12 @@ function NavBar() {
         >
           <GiShoppingCart className="text-2xl size-8 sm:size-10 lg:size-8 hover:fill-primary-bold" />
         </button>
-        <button className="bg-primary text-gray-700 px-2 lg:px-4  transition-all duration-300 hover:bg-primary-bold ">
-          Sign up
-        </button>
+        <NavLink
+          to={"/login"}
+          className="bg-primary text-gray-700 px-2 lg:px-4  transition-all duration-300 hover:bg-primary-bold "
+        >
+          Login
+        </NavLink>
         <button
           className=" lg:hidden transition-all duration-300 border-none outline-none"
           onClick={() => setShowNav((s) => !s)}
