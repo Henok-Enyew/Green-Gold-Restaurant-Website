@@ -16,14 +16,23 @@ function NavBar() {
         />
       </NavLink>
       <div
+        className={`${showNav ? "fixed" : "hidden"} 
+         w-full h-screen top-0 left-0 bg-black bg-opacity-20 backdrop-blur-sm  z-[45]`}
+        onClick={() => setShowNav(false)}
+      ></div>
+      <div
         //   className={`absolute top-0 left-0 flex flex-col h-96 items-center justify-center gap-y-5 lg:flex-row lg:   lg:space-x-8 bg-white bg-opacity-15 py-[1px] px-3 backdrop-blur-md transition-all duration-300 ${
         //     showNav ? "translate-x-0" : "-translate-x-full"
         //   }`}
         // >
-        className={`absolute top-0 left-0 flex flex-col h-96 items-center justify-center gap-y-5 
-        bg-black bg-opacity-15 py-[1px] px-3 backdrop-blur-md transition-all duration-300 
-        ${showNav ? "translate-x-0" : "-translate-x-full"}
-        lg:flex-row lg:gap-y-0 lg:h-auto lg:static lg:translate-x-0 lg:justify-center lg:space-x-8`}
+        className={`absolute top-0 left-1/2 flex flex-col h-96 items-center justify-center gap-y-5 w-3/4  
+        bg-black bg-opacity-50 py-[1px] px-3 backdrop-blur-md transition-all duration-300 
+        ${
+          showNav
+            ? "translate-y-0 -translate-x-1/2 top-28"
+            : "-top-full -translate-y-full -translate-x-10   "
+        }
+       lg:translate-y-0 lg:w-auto lg:flex-row lg:gap-y-0 lg:h-auto lg:static lg:translate-x-0 lg:justify-center lg:space-x-8 z-50`}
       >
         <NavLink
           onClick={() => {
@@ -62,7 +71,7 @@ function NavBar() {
           Contact us
         </NavLink>
       </div>
-      <div className="flex lg:space-x-4 space-x-2 py-[1px] px-2 lg:px-4 backdrop-blur-md z-50">
+      <div className="flex lg:space-x-4 space-x-2 py-[1px] px-2 lg:px-4 backdrop-blur-md bg-black bg-opacity-50 z-50">
         <button
           className="flex items-center justify-center outline-none border-none transition-all duration-300 "
           onClick={() => setCartOpen(true)}

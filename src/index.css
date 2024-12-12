@@ -68,3 +68,20 @@ body {
 .leaflet-routing-geocoder-result {
   display: none !important;
 }
+
+/* @keyframes slide {
+  0% {
+    @apply translate-x-0;
+  }
+  50% {
+    @apply translate-x-full;
+  }
+  100% {
+    @apply translate-x-0;
+  }
+}
+
+.animate-slide {
+  @apply duration-1000;
+  animation: slide 5s infinite;
+} */
