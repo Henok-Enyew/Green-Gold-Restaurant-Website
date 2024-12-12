@@ -45,21 +45,21 @@ function Hero() {
             </div>
             <div>
               <p
-                className="animate-slide font-thin text-lg text-white mb-4 sm:text-xl "
+                className="amharic-text animate-slide font-thin text-lg text-white mb-4 sm:text-xl "
                 data-aos="fade-up"
                 data-aos-duration="800"
               >
                 ግሪን ጎልድ ሬስቶራንት
               </p>
               <p
-                className="font-semibold text-5xl text-primary max-w-2xl mx-auto mb-6"
+                className="amharic-text font-semibold text-5xl text-primary max-w-2xl mx-auto mb-6 tracking-wider"
                 data-aos="fade-up"
                 data-aos-duration="1000"
               >
                 በፈገግታ እሚመገቡበት እና እሚጎነጩበት ቦታ!
               </p>
               <p
-                className="font-extralight text-gray-300 text-2xl  sm:text-3xl lg:text-2xl mb-24 sm:mb-48 lg:mb-32  pt-4"
+                className="amharic-text font-extralight text-gray-300 text-2xl  sm:text-3xl lg:text-2xl mb-24 sm:mb-48 lg:mb-32   pt-4"
                 data-aos="fade-up"
                 data-aos-duration="1200"
               >
